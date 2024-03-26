@@ -7,6 +7,24 @@ import Hire from '../assets/hireme.png'
 
 function Intro() {
 
+
+   const handleDownload = () => {
+     
+     const pdfUrl = "portfolio/src/assets/Aditya singh.pdf";
+
+    
+     const link = document.createElement("a");
+     link.href = pdfUrl;
+     link.download = "Aditya singh.pdf"; 
+     document.body.appendChild(link);
+
+     
+     link.click();
+
+    
+     document.body.removeChild(link);
+   };
+
  
   return (
     <>
@@ -24,7 +42,7 @@ function Intro() {
             user-friendly and responsive websites.
           </p>
           <Link>
-            <button className="btn">
+            <button className="btn" onClick={handleDownload}>
               <img src={Hire} alt="Hire me" className="Hire" />
               Hire Me
             </button>
