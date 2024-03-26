@@ -42,14 +42,14 @@
     border-radius: 2rem;
     background: white;
 }
-@media screen and (max-width:455px) {
+@media screen and (max-width:485px) {
     .workImg{
         height: 40vw;
         
     
     }
     .workImgs,.workbtn{
-        margin-right: 32rem;
+        margin-right: 29rem;
     }
     .worktitle,.workDesc{
         margin-right: 30rem;
