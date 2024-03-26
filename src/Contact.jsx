@@ -69,19 +69,21 @@ function Contact() {
             className="name"
             placeholder="Name.."
             name="your_name"
-            required
+            
           />
           <input
             type="email"
             className="email"
             placeholder="Email..."
             name="your email"
+          
           />
           <textarea
             name="message"
             rows="5"
             placeholder="message"
             className="msg"
+            
           ></textarea>
           <button
             type="submit"
