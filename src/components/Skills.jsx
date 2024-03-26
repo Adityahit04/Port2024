@@ -81,7 +81,7 @@ function Skills() {
           <div className="skillsBar">
             <img src={AppDesign} alt="AppDesign" className="skillsbarimg" />
             <div className="skillBarText">
-              <h2>Skills Deveop</h2>
+              <h2>Skills Development</h2>
               <p>
                 Developing skills in front-end development requires a
                 combination of structured learning, practical experience, and

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useRef } from 'react';
 import './contact.css'
 import walmart from './assets/walmart.png'
@@ -13,9 +13,20 @@ import emailjs from "@emailjs/browser";
 
 
 function Contact() {
-  function check(){
-    console.log("clicked")
-  }
+  
+ const[buttonColor, setButtonColor] = useState("white");
+ const [text, setText] = useState("Submit");
+
+   const handleClick = () => {
+     
+     setButtonColor("blue");
+     setText("submitted")
+     
+      
+
+     
+   };
+
    const form = useRef()
 
      const sendEmail = (e) => {
@@ -39,9 +50,7 @@ function Contact() {
     <section id="contactpage">
       <div id="clients">
         <h1 className="contactpagetitle">My Clients</h1>
-        <p className="clientdesc">
-          Clients: My current Clients are  
-        </p>
+        <p className="clientdesc">Clients: My current Clients are</p>
         <div className="clientImgs">
           <img src={walmart} alt="" className="clientimg" />
           <img src={Adobe} alt="" className="clientimg" />
@@ -51,18 +60,36 @@ function Contact() {
       </div>
       <div id="contact">
         <h1 className="contactpagetitle">Contact me</h1>
-        <span className="contactdesc">Feel free to get in touch : Please fill the form</span>
+        <span className="contactdesc">
+          Feel free to get in touch : Please fill the form
+        </span>
         <form ref={form} className="contactform" onSubmit={sendEmail}>
-          <input type="text" className="name" placeholder="Name.." name='your_name' />
-          <input type="email" className="email" placeholder="Email..." name='your email' />
+          <input
+            type="text"
+            className="name"
+            placeholder="Name.."
+            name="your_name"
+          />
+          <input
+            type="email"
+            className="email"
+            placeholder="Email..."
+            name="your email"
+          />
           <textarea
             name="message"
             rows="5"
             placeholder="message"
             className="msg"
           ></textarea>
-          <button type="submit" value="send" className="submit" onClick={check}>
-            Submit
+          <button
+            type="submit"
+            value="send"
+            className="submit"
+            style={{ background: buttonColor }}
+            onClick={handleClick}
+          >
+            {text}
           </button>
           <div className="links">
             <img src={Facebook} alt="" className="link" />

@@ -21,7 +21,7 @@ function Intro() {
           </span>
           <p className="intropara">
             Front-end developer with 2 years of experience in building
-            user-friendly and responsive <br/>websites.
+            user-friendly and responsive websites.
           </p>
           <Link>
             <button className="btn">
