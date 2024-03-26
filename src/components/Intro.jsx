@@ -1,6 +1,6 @@
 import React from 'react'
 import './Intro.css'
-import myImg from '../assets/me.jpeg'
+import myImg from '../assets/mine.jpeg'
 import {Link} from 'react-scroll'
 import Hire from '../assets/hireme.png'
 
