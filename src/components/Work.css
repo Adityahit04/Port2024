@@ -48,11 +48,10 @@
         
     
     }
-    .workImgs,.workbtn{
-        margin-right: 29rem;
+    .workImgs,.workbtn,.worktitle,
+    .workDesc{
+        margin-right: 25rem;
     }
-    .worktitle,.workDesc{
-        margin-right: 30rem;
-    }
+    
     
 }
