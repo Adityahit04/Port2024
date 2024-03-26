@@ -29,8 +29,8 @@ function Contact() {
 
    const form = useRef()
 
-     const sendEmail = (e) => {
-       e.preventDefault();
+     const sendEmail = () => {
+       
 
        emailjs
          .sendForm("service_khn0v9g", "template_dndgcsu", form.current, {
