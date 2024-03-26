@@ -4,7 +4,7 @@ import './Footer.css'
 function Footer() {
   return (
     <>
-    <div className="footer">copy right 2-024 all rights reseverd</div>
+    <div className="footer">Copy right : 2024 All rights reseverd</div>
     </>
   )
 }
