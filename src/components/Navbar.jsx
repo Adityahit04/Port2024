@@ -128,7 +128,7 @@ function Navbar() {
           >
             Client
           </Link>
-          <Link
+          <button
             activeClass="active"
             spy={true}
             smooth={true}
@@ -136,10 +136,16 @@ function Navbar() {
             offset={-100}
             to="contact"
             className="mlistItems"
-            onClick={() => setShowMenu(false)}
+            onClick={() => {
+              document
+                .getElementById("contact")
+                .scrollIntoView({ behavior: "smooth" });
+                 setShowMenu(false)
+            }}
+            
           >
             Contact
-          </Link>
+          </button>
         </div>
       </nav>
     </>

@@ -69,6 +69,7 @@ function Contact() {
             className="name"
             placeholder="Name.."
             name="your_name"
+            required
           />
           <input
             type="email"
